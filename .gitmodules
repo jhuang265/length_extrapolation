@@ -1,0 +1,6 @@
+[submodule "InfiniteBench"]
+	path = InfiniteBench
+	url = https://github.com/OpenBMB/InfiniteBench.git
+[submodule "RULER"]
+	path = RULER
+	url = https://github.com/hsiehjackson/RULER.git
