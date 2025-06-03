@@ -2,6 +2,8 @@
 
 ## Introduction
 
+This is the code for the COLING 2025 paper "How Well Can a Long Sequence Model Model Long Sequences? Comparing Architectural Inductive Biases on Long-Context Abilities".
+
 ## Setup Environments
 
 ### RULER
@@ -72,3 +74,25 @@ if temperature != 1.0:
 All the files for running RULER experiments are available in the `RULER` folder (you must first pull the git submodule).
 
 There will be a `scripts/` folder which contains the code. From this folder, you should run jobs directly from `mila_run_scripts`.
+
+## Citation
+
+```
+@inproceedings{huang-2025-well,
+    title = "How Well Can a Long Sequence Model Model Long Sequences? Comparing Architectural Inductive Biases on Long-Context Abilities",
+    author = "Huang, Jerry",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.3/",
+    pages = "29--39"
+}
+```
