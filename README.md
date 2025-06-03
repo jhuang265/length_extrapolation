@@ -4,7 +4,11 @@
 
 This is the code for the COLING 2025 paper "How Well Can a Long Sequence Model Model Long Sequences? Comparing Architectural Inductive Biases on Long-Context Abilities".
 
+Everything is actually based on the [RULER](https://github.com/NVIDIA/RULER) repository, which was modified to support some additional experiments.
+
 ## Setup Environments
+
+Note that everything was run in a SLURM cluster. The following are the instructions I ran but which may be different for you.
 
 ### RULER
 
