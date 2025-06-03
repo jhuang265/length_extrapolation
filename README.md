@@ -64,10 +64,15 @@ singularity shell --nv --cleanenv [ARGS]
 
 #### Common issues
 
-There are some common issues you might observe. One of them is a logits issue with Mamba models. Most of the time, this can be fixed by finding the file `mamba/mamba_ssm/utils/generation.py` and commenting the following out in the `sample` function (as long as you never changed the `temperature` argument originally).
-
+There are some common issues you might observe. One of them is a logits issue with Mamba models. Most of the time, this can be fixed by finding the file `mamba/mamba_ssm/utils/generation.py` and changing the following in the `sample` function (as long as you never changed the `temperature` argument originally).
 ```python
 if temperature != 1.0:
+    logits_top /= temperature
+```
+
+In particular, you should add a check to make sure that temperature is defined and greater than 0, such as
+```python
+if temperature != 1.0 and temperature > 0:
     logits_top /= temperature
 ```
 
